@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		348363B12FFD326B004958F4 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 348363B02FFD326B004958F4 /* RiveRuntime */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		348363A12FFD31E8004958F4 /* PixeliconMorph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixeliconMorph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348363B12FFD326B004958F4 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = PixeliconMorph;
 			packageProductDependencies = (
+				348363B02FFD326B004958F4 /* RiveRuntime */,
 			);
 			productName = PixeliconMorph;
 			productReference = 348363A12FFD31E8004958F4 /* PixeliconMorph.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 348363982FFD31E7004958F4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				348363AF2FFD326B004958F4 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 348363A22FFD31E8004958F4 /* Products */;
 			projectDirPath = "";
@@ -331,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		348363AF2FFD326B004958F4 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		348363B02FFD326B004958F4 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 348363AF2FFD326B004958F4 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 348363992FFD31E7004958F4 /* Project object */;
 }
